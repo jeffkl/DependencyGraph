@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFrameworks>net472;net8.0</TargetFrameworks>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Build" Version="17.8.3" ExcludeAssets="Runtime" />
+  </ItemGroup>
+  <ItemGroup>
+    <!--<ProjectReference Include="..\Microsoft.Build.Experimental.Graph\Microsoft.Build.Experimental.Graph.csproj" />-->
+    <ProjectReference Include="..\Microsoft.DependencyGraph\Microsoft.DependencyGraph.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,13 @@
+<Project>
+  <PropertyGroup>
+    <BaseArtifactsPath>$(MSBuildThisFileDirectory)artifacts</BaseArtifactsPath>
+    <DefaultItemExcludes>*log</DefaultItemExcludes>
+    <DisableImplicitNamespaceImports>true</DisableImplicitNamespaceImports>
+    <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
+    <LangVersion>Latest</LangVersion>
+    <MSBuildTreatWarningsAsErrors>true</MSBuildTreatWarningsAsErrors>
+    <SuppressNETCoreSdkPreviewMessage>true</SuppressNETCoreSdkPreviewMessage>
+    <ContinuousIntegrationBuild Condition="'$(TF_BUILD)' == 'true'">true</ContinuousIntegrationBuild>
+    <RestoreUseStaticGraphEvaluation>true</RestoreUseStaticGraphEvaluation>
+  </PropertyGroup>
+</Project>
